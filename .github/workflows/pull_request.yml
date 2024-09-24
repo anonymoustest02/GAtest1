@@ -5,6 +5,47 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
+
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print job ID
+        run: echo "jobs_1"
+      - name: sleep1
+        run: sleep 3600
+
+  job_2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print job ID
+        run: echo "jobs_2"
+      - name: sleep2
+        run: sleep 3600
+
+  job_3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print job ID
+        run: echo "jobs_3"
+      - name: sleep3
+        run: sleep 3600
+
+  job_4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print job ID
+        run: echo "jobs_4"
+      - name: sleep4
+        run: sleep 3600
+
+  job_5:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print job ID
+        run: echo "jobs_5"
+      - name: sleep5
+        run: sleep 3600
+        
   run-client-pr:
     runs-on: ubuntu-latest
     environment: test

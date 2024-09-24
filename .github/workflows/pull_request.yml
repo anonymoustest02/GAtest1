@@ -13,6 +13,9 @@ jobs:
 
     - name: test key
       run: echo "999"
+
+    - name: sleep 
+      run: sleep 30
     
     - name: Run client_pull_request script
       run: python3 client.py "${{ secrets.SERVER_IP }}" ${{ secrets.SERVER_PORT }} "pull action" ${{ secrets.TEST_KEY }}

@@ -1,1 +1,1 @@
-typo1
+type1

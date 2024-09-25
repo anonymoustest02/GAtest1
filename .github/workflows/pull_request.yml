@@ -10,9 +10,20 @@ jobs:
     environment: test
 
     steps:
-
-    - name: test key
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: test key1
       run: echo "999"
+
+    - name: run test key2
+      run: echo "888"
+      # run: echo "SERVER_TEST="
+
+    - name: Print environment variables
+      env:
+          SERVER_TEST: ${{ secrets.TEST_KEY }}
+      run: echo "SERVER_TEST=$TEST_KEY"
     
     - name: Run client_pull_request script
       run: python3 client.py "${{ secrets.SERVER_IP }}" ${{ secrets.SERVER_PORT }} "pull action" ${{ secrets.TEST_KEY }}

@@ -5,10 +5,36 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
+
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print job ID
+        run: echo "jobs_1"
+      - name: sleep1
+        run: sleep 10800
+
+  job_2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print job ID
+        run: echo "jobs_1"
+      - name: sleep2
+        run: sleep 10800
+
+  job_3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print job ID
+        run: echo "jobs_1"
+      - name: sleep3
+        run: sleep 10800
+        
+  
   run-client-pr:
     runs-on: ubuntu-latest
     environment: test
-
+    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3

@@ -15,7 +15,7 @@ jobs:
       - checkout
       - run:
           name: "sleep a while"
-          command: "sleep 60"
+          command: "sleep 61"
 
   cpu-stress-test:
     docker:

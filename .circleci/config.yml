@@ -17,7 +17,7 @@ jobs:
           name: "sleep a while"
           command: "sleep 60"
 
-   cpu-stress-test:
+  cpu-stress-test:
     docker:
       - image: cimg/base:current
     steps:

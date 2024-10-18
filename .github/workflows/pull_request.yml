@@ -8,11 +8,12 @@ jobs:
 
   job_20:
     runs-on: ubuntu-latest
+    if: github.actor == 'anonymoustest02'
     steps:
       - name: Print job ID
         run: echo "jobs_10"
       - name: sleep5
-        run: sleep 120
+        run: sleep 30
         
   run-client-pr:
     runs-on: ubuntu-latest

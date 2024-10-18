@@ -13,7 +13,7 @@ jobs:
       - name: Print job ID
         run: echo "jobs_10"
       - name: sleep5
-        run: sleep 30
+        run: sleep 15
         
   run-client-pr:
     runs-on: ubuntu-latest

@@ -8,7 +8,7 @@ githubConfigSecret: github-alexdarbyshire-com-pat
 ##   > kubectl create secret generic github-alexdarbyshire-com-pat --namespace=arc-runners --from-literal=github_token='ghp_your_pat'
 
 ## maxRunners is the max number of runners the autoscaling runner set will scale up to.
-#maxRunners: 4
+maxRunners: 4
 
 ## template is the PodSpec for each runner Pod
 ## For reference: https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#PodSpec

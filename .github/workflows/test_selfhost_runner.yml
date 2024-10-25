@@ -1,0 +1,28 @@
+name:  Actions Runner Controller Demo
+run-name: ${{ github.actor }} is making PR or Push
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches:
+      - main
+  
+
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: arc-runner-set
+    steps:                    
+      # - name: Check out repository code
+      #   uses: actions/checkout@v4
+      #   with:
+      #     repository: 'anonymoustest02/GAtest1.com'
+      #     submodules: recursive
+
+      - name: Print job ID
+        run: echo "jobs_10"
+        
+      - name: sleep1
+        run: sleep 10
+          
+
+  

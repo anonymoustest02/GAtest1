@@ -15,7 +15,7 @@ jobs:
         run: echo "jobs_10"
         
       - name: sleep1
-        run: sleep 10
+        run: sleep 60
 
   job_1:
     runs-on: arc-runner-set

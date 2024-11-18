@@ -11,7 +11,7 @@ jobs:
       - name: Print job name
         run: echo "job_1"
       - name: Sleep
-        run: sleep 21
+        run: sleep 20
 
   job_2:
     runs-on: ubuntu-latest

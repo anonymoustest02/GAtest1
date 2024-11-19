@@ -1,2 +1,2 @@
 type2
-waitwait12
+waitwait

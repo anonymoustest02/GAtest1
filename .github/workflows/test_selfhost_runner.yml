@@ -9,16 +9,16 @@ on:
 
 jobs:
 
-  job_1:
-    runs-on: arc-runner-set
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+  # job_1:
+  #   runs-on: arc-runner-set
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+  #     - name: Run Fibonacci Task (Shell Script)
+  #       run: |
+  #         chmod +x run_fibonacci.sh
+  #         ./run_fibonacci.sh
 
   # job_2:
   #   runs-on: arc-runner-set
@@ -381,42 +381,42 @@ jobs:
   #     - name: Sleep
   #       run: sleep 20
 
-  # job_21:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_21"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_21:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_21"
+      - name: Sleep
+        run: sleep 20
 
-  # job_22:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_22"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_22:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_22"
+      - name: Sleep
+        run: sleep 20
 
-  # job_23:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_23"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_23:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_23"
+      - name: Sleep
+        run: sleep 20
 
-  # job_24:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_24"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_24:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_24"
+      - name: Sleep
+        run: sleep 20
 
-  # job_25:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_25"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_25:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_25"
+      - name: Sleep
+        run: sleep 20

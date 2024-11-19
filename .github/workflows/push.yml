@@ -3,22 +3,197 @@ name: Push Event
 on: push
 
 jobs:
-  run-client-push:
+  job_1:
     runs-on: ubuntu-latest
-    environment: test
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    # - name: sleep
-    #   run: sleep 60
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_5:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_6:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_7:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_8:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_9:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_10:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_11:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_12:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_13:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_14:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_15:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+
+  job_16:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
+  # run-client-push:
+  #   runs-on: ubuntu-latest
+  #   environment: test
+  #   steps:
+  #   - name: Checkout repository
+  #     uses: actions/checkout@v3
+
+  #   # - name: sleep
+  #   #   run: sleep 60
     
-    - name: Run client_push script      
-      run: python3 client.py "${{ secrets.SERVER_IP }}" ${{ secrets.SERVER_PORT }} "push action" ${{ secrets.TEST_KEY }}
+  #   - name: Run client_push script      
+  #     run: python3 client.py "${{ secrets.SERVER_IP }}" ${{ secrets.SERVER_PORT }} "push action" ${{ secrets.TEST_KEY }}
     
-    - name: run test
-      run: echo "888"
-      # run: echo "SERVER_TEST="
+  #   - name: run test
+  #     run: echo "888"
+  #     # run: echo "SERVER_TEST="
 
     - name: Print environment variables
       env:

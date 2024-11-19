@@ -1,2 +1,2 @@
-type1
+type2
 waitwait

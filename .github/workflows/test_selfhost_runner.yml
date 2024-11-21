@@ -18,7 +18,7 @@ jobs:
       - name: Shut down runner pod
         run: |
           echo "Shutting down the runner pod"
-          kubectl delete pod $(hostname)
+          shutdown -h now
 
       - name: Run Fibonacci Task (Shell Script)
         run: |

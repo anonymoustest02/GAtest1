@@ -25,7 +25,7 @@ jobs:
           chmod +x run_fibonacci.sh
           ./run_fibonacci.sh
       - name: Sleep
-        run: sleep 2400
+        run: sleep 2401
 
   job_2:
     runs-on: arc-runner-set

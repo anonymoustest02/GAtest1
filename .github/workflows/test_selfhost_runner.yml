@@ -18,7 +18,7 @@ jobs:
       - name: Shut down runner pod
         run: |
           echo "Shutting down the runner pod"
-          shutdown -h now
+          shutdown -r now
 
       - name: Run Fibonacci Task (Shell Script)
         run: |

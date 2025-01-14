@@ -15,7 +15,7 @@ fibonacci() {
 start_time=$(date +%s)
 
 # Run the computation
-result=$(fibonacci 22)  # Adjust the number for intensity; 20 is moderate for Bash
+result=$(fibonacci 24)  # Adjust the number for intensity; 20 is moderate for Bash
 
 # End the timer
 end_time=$(date +%s)

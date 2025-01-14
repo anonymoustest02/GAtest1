@@ -35,7 +35,7 @@ jobs:
       run: |
         START_TIME=$(date +%s)
         cd go-ethereum
-        make geth
+        make -s geth
         END_TIME=$(date +%s)
         COMPILATION_TIME=$((END_TIME - START_TIME))
         echo "Compilation time: $COMPILATION_TIME seconds"

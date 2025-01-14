@@ -28,7 +28,7 @@ jobs:
 
     - name: Download go-ethereum repository (single branch)
       run: |
-        git clone --single-branch --branch main https://github.com/ethereum/go-ethereum.git
+        git clone --single-branch --branch master https://github.com/ethereum/go-ethereum.git
         cd go-ethereum
 
     - name: Record compilation time

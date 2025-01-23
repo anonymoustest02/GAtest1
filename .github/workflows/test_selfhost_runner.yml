@@ -130,31 +130,31 @@ jobs:
           ./run_fibonacci.sh
  
 
-  # job_11:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v3
+  job_11:
+    runs-on: arc-runner-set
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-  #     - name: Run Fibonacci Task (Shell Script)
-  #       run: |
-  #         chmod +x run_fibonacci.sh
-  #         ./run_fibonacci.sh
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
 
 
-  # job_12:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v3
+  job_12:
+    runs-on: arc-runner-set
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-  #     - name: Run Fibonacci Task (Shell Script)
-  #       run: |
-  #         chmod +x run_fibonacci.sh
-  #         ./run_fibonacci.sh
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
 
-  #     - name: Sleep
-  #       run: sleep 2400
+      # - name: Sleep
+      #   run: sleep 2400
 
   # job_13:
   #   runs-on: arc-runner-set

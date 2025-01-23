@@ -10,7 +10,7 @@ on:
 jobs:
 
   job_1:
-    runs-on:  ubuntu-latest#arc-runner-set
+    runs-on:  arc-runner-set #ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

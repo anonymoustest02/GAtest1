@@ -9,7 +9,7 @@ on:
     branches:
       - main
  
-jobs:
+jobs: 
 
   job_1:
     runs-on:  arc-runner-set  #ubuntu-latest

@@ -25,8 +25,8 @@ jobs:
       - name: Run Fibonacci Task (Shell Script)
         run: |
           chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh &
-          sleep 15
+          ./run_fibonacci.sh 
+          # sleep 15
 
   # job_2:
   #   runs-on: arc-runner-set

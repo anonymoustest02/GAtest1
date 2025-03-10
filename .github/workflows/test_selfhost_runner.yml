@@ -34,7 +34,8 @@ jobs:
           # ./run_fibonacci.sh 
           # sleep 15
           sudo apt-get update && sudo apt-get install -y stress
-          stress --cpu 4 --timeout 60s
+          stress --cpu 4 --timeout 60s &
+          sleep 20
 
   # job_2:
   #   runs-on: arc-runner-set

@@ -34,9 +34,11 @@ jobs:
           # ./run_fibonacci.sh 
           # sleep 15
           sudo apt-get update && sudo apt-get install -y stress
-          sudo apt-get install -y tmux
+          # sudo apt-get install -y tmux
+          sudo apt-get install -y screen
           # nohup stress --cpu 4 --timeout 120s > stress_output.log 2>&1 &
-          tmux new-session -d 'stress --cpu 4 --timeout 600s'
+          # tmux new-session -d 'stress --cpu 4 --timeout 600s'
+          screen -dmS stress_test stress --cpu 4 --timeout 600s
           # disown
           sleep 5
 

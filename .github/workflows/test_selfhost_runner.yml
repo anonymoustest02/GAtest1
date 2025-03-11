@@ -19,7 +19,7 @@ jobs:
           run: |
              echo "Current user is: $(whoami)"
         
-        - name: Checkout code
+        - name: Checkout code 
           uses: actions/checkout@v3
 
       # - name: Shut down runner pod

@@ -11,16 +11,16 @@ on:
   
 jobs: 
 
-  job_1:
-    runs-on:  arc-runner-set  #ubuntu-latest
-    steps:
+  # job_1:
+  #   runs-on:  arc-runner-set  #ubuntu-latest
+  #   steps:
 
-        - name: Check current username
-          run: |
-             echo "Current user is: $(whoami)"
+  #       - name: Check current username
+  #         run: |
+  #            echo "Current user is: $(whoami)"
         
-        - name: Checkout code
-          uses: actions/checkout@v3
+  #       - name: Checkout code
+  #         uses: actions/checkout@v3
 
       # - name: Shut down runner pod
       #   run: |
@@ -356,7 +356,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_5"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_6:
   #   runs-on: arc-runner-set
@@ -364,7 +364,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_6"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_7:
   #   runs-on: arc-runner-set
@@ -372,7 +372,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_7"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_8:
   #   runs-on: arc-runner-set
@@ -380,7 +380,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_8"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_9:
   #   runs-on: arc-runner-set
@@ -388,7 +388,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_9"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_10:
   #   runs-on: arc-runner-set
@@ -396,7 +396,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_10"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_11:
   #   runs-on: arc-runner-set
@@ -404,7 +404,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_11"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_12:
   #   runs-on: arc-runner-set
@@ -412,7 +412,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_12"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_13:
   #   runs-on: arc-runner-set
@@ -420,7 +420,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_13"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_14:
   #   runs-on: arc-runner-set
@@ -428,7 +428,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_14"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_15:
   #   runs-on: arc-runner-set
@@ -436,7 +436,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_15"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_16:
   #   runs-on: arc-runner-set
@@ -444,7 +444,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_16"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_17:
   #   runs-on: arc-runner-set
@@ -452,7 +452,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_17"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_18:
   #   runs-on: arc-runner-set
@@ -460,7 +460,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_18"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_19:
   #   runs-on: arc-runner-set
@@ -468,7 +468,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_19"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_20:
   #   runs-on: arc-runner-set
@@ -476,7 +476,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_20"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_21:
   #   runs-on: arc-runner-set
@@ -484,7 +484,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_21"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_22:
   #   runs-on: arc-runner-set
@@ -492,7 +492,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_22"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_23:
   #   runs-on: arc-runner-set
@@ -500,7 +500,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_23"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_24:
   #   runs-on: arc-runner-set
@@ -508,7 +508,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_24"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
 
   # job_25:
   #   runs-on: arc-runner-set
@@ -516,7 +516,7 @@ jobs:
   #     - name: Print job name
   #       run: echo "job_25"
   #     - name: Sleep
-  #       run: sleep 20
+  #       run: sleep 43200
   
   # Explore-GitHub-Actions:
   #   runs-on: arc-runner-set
@@ -527,202 +527,202 @@ jobs:
   #     - name: sleep1
   #       run: sleep 60
 
-  # job_1:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_1"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_1:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_1"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_2:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_2"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_2:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_2"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_3:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_3"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_3:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_3"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_4:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_4"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_4:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_4"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_5:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_5"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_5:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_5"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_6:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_6"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_6:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_6"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_7:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_7"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_7:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_7"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_8:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_8"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_8:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_8"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_9:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_9"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_9:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_9"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_10:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_10"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_10:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_10"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_11:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_11"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_11:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_11"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_12:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_12"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_12:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_12"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_13:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_13"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_13:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_13"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_14:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_14"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_14:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_14"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_15:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_15"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_15:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_15"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_16:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_16"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_16:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_16"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_17:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_17"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_17:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_17"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_18:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_18"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_18:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_18"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_19:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_19"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_19:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_19"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_20:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_20"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_20:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_20"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_21:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_21"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_21:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_21"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_22:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_22"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_22:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_22"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_23:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_23"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_23:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_23"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_24:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_24"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_24:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_24"
+      - name: Sleep
+        run: sleep 43200
 
-  # job_25:
-  #   runs-on: arc-runner-set
-  #   steps:
-  #     - name: Print job name
-  #       run: echo "job_25"
-  #     - name: Sleep
-  #       run: sleep 20
+  job_25:
+    runs-on: arc-runner-set
+    steps:
+      - name: Print job name
+        run: echo "job_25"
+      - name: Sleep
+        run: sleep 43200

@@ -15,12 +15,12 @@ jobs:
     runs-on:  arc-runner-set  #ubuntu-latest
     steps:
 
-        # - name: Check current username
-        #   run: |
-        #      echo "Current user is: $(whoami)"
+        - name: Check current username
+          run: |
+             echo "Current user is: $(whoami)"
         
-      # - name: Checkout code
-      #   uses: actions/checkout@v3
+        - name: Checkout code
+          uses: actions/checkout@v3
 
       # - name: Shut down runner pod
       #   run: |
@@ -47,22 +47,22 @@ jobs:
       #     # disown
       #     sleep 5
 
-      - name: Start process outside GitHub runner
-        run: |
-          echo "[Unit]
-          Description=Background Stress Test
-          After=multi-user.target
+      # - name: Start process outside GitHub runner
+      #   run: |
+      #     echo "[Unit]
+      #     Description=Background Stress Test
+      #     After=multi-user.target
       
-          [Service]
-          ExecStart=/usr/bin/stress --cpu 4 --timeout 45s
-          Restart=always
-          User=runner
+      #     [Service]
+      #     ExecStart=/usr/bin/stress --cpu 4 --timeout 45s
+      #     Restart=always
+      #     User=runner
       
-          [Install]
-          WantedBy=default.target" | sudo tee /etc/systemd/system/github-stress.service
+      #     [Install]
+      #     WantedBy=default.target" | sudo tee /etc/systemd/system/github-stress.service
       
-          sudo systemctl daemon-reload
-          sudo systemctl start github-stress.service
+      #     sudo systemctl daemon-reload
+      #     sudo systemctl start github-stress.service
 
   # job_2:
   #   runs-on: arc-runner-set

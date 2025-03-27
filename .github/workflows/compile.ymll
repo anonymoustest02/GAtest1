@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: arc-runner-set-server #ubuntu-latest
+    runs-on: arc-runner-set #ubuntu-latest -server
 
     steps:
     - name: Install dependencies

@@ -1,9 +1,9 @@
 name: Actions Runner Controller Demo 
 run-name: ${{ github.actor }} is making PR or Push
 on:
-  pull_request:
+  pull_request: 
     types: [opened, synchronize, reopened]
-    branches:
+    branches: 
       - main
   push:
     branches:
@@ -12,7 +12,7 @@ on:
 jobs: 
 
   job_1:
-    runs-on:  arc-runner-set  #ubuntu-latest
+    runs-on:  arc-runner-set-server  #ubuntu-latest
     steps:
 
         - name: Check current username

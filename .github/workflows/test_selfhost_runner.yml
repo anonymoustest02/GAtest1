@@ -27,10 +27,10 @@ jobs:
       #     echo "Shutting down the runner pod"
       #     shutdown -r now
 
-      # - name: Run Fibonacci Task (Shell Script)
-      #   run: |
-      #     chmod +x run_fibonacci.sh
-      #     ./run_fibonacci.sh 
+        - name: Run Fibonacci Task (Shell Script)
+          run: |
+            chmod +x run_fibonacci.sh
+            ./run_fibonacci.sh 
       #     # sleep 15
           
       # - name: Run CPU stress

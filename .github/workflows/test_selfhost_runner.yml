@@ -14,7 +14,7 @@ jobs:
   job_1:
     runs-on:  arc-runner-set  #ubuntu-latest -server
     steps:
-
+ 
         # - name: Check current username
         #   run: |
         #      echo "Current user is: $(whoami)"

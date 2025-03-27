@@ -15,9 +15,9 @@ jobs:
     runs-on:  arc-runner-set  #ubuntu-latest -server
     steps:
 
-        - name: Check current username
-          run: |
-             echo "Current user is: $(whoami)"
+        # - name: Check current username
+        #   run: |
+        #      echo "Current user is: $(whoami)"
         
         - name: Checkout code 
           uses: actions/checkout@v3
@@ -93,10 +93,10 @@ jobs:
         uses: actions/checkout@v3
         
           
-  #     - name: Run Fibonacci Task (Shell Script)
-  #       run: |
-  #         chmod +x run_fibonacci.sh
-  #         ./run_fibonacci.sh
+      - name: Run Fibonacci Task (Shell Script)
+        run: |
+          chmod +x run_fibonacci.sh
+          ./run_fibonacci.sh
  
 
   # job_5:

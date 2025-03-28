@@ -1,7 +1,7 @@
 name: Push Event
 
 on: push
-  
+   
 jobs:
   job_1:
     runs-on: arc-runner-set #ubuntu-latest

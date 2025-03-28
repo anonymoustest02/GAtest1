@@ -1,6 +1,6 @@
 name: Push Event
 
-on: push
+on: push 
     
 jobs:
   job_1:

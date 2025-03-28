@@ -4,7 +4,7 @@ on: push
 
 jobs:
   job_1:
-    runs-on: ubuntu-latest
+    runs-on: arc-runner-set #ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

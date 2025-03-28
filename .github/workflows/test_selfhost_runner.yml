@@ -19,33 +19,34 @@ jobs:
         #   run: |
         #      echo "Current user is: $(whoami)"
         
-        - name: Checkout code 
-          uses: actions/checkout@v3
+        # - name: Checkout code 
+        #   uses: actions/checkout@v3
 
       # - name: Shut down runner pod
       #   run: |
       #     echo "Shutting down the runner pod"
       #     shutdown -r now
 
-        - name: Run Fibonacci Task (Shell Script)
-          run: |
-            chmod +x run_fibonacci.sh
-            ./run_fibonacci.sh 
+        # - name: Run Fibonacci Task (Shell Script)
+        #   run: |
+        #     chmod +x run_fibonacci.sh
+        #     ./run_fibonacci.sh 
       #     # sleep 15
           
-      # - name: Run CPU stress
-      #   run: |
-      #     # chmod +x run_fibonacci.sh
-      #     # ./run_fibonacci.sh 
-      #     # sleep 15
-      #     sudo apt-get update && sudo apt-get install -y stress
-      #     # sudo apt-get install -y tmux
-      #     sudo apt-get install -y screen
-      #     # nohup stress --cpu 4 --timeout 120s > stress_output.log 2>&1 &
-      #     # tmux new-session -d 'stress --cpu 4 --timeout 600s'
-      #     screen -dmS stress_test stress --cpu 4 --timeout 600s
-      #     # disown
-      #     sleep 5
+      - name: Run CPU stress
+        run: |
+          # chmod +x run_fibonacci.sh
+          # ./run_fibonacci.sh 
+          # sleep 15
+          sudo apt-get update && sudo apt-get install -y stress
+          # sudo apt-get install -y tmux
+          # sudo apt-get install -y screen
+          # nohup stress --cpu 1 --timeout 120s > stress_output.log 2>&1 &
+          # tmux new-session -d 'stress --cpu 1 --timeout 600s'
+          # screen -dmS stress_test stress --cpu 1 --timeout 600s
+          stress_test stress --cpu 1 --timeout 600s
+          # disown
+          # sleep 5
 
       # - name: Start process outside GitHub runner
       #   run: |
@@ -54,7 +55,7 @@ jobs:
       #     After=multi-user.target
       
       #     [Service]
-      #     ExecStart=/usr/bin/stress --cpu 4 --timeout 45s
+      #     ExecStart=/usr/bin/stress --cpu 1 --timeout 45s
       #     Restart=always
       #     User=runner
       
@@ -67,177 +68,238 @@ jobs:
   job_2:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
 
   job_3:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
 
   job_4:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
         
           
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
  
 
   job_5:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
+          
 
   job_6:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
   
 
   job_7:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
  
 
   job_8:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
   
 
   job_9:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
  
   job_10:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
  
 
   job_11:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
 
 
   job_12:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
 
 
   job_13:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
 
 
   job_14:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
 
   job_15:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
-
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
 
   job_16:
     runs-on: arc-runner-set
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Run Fibonacci Task (Shell Script)
-        run: |
-          chmod +x run_fibonacci.sh
-          ./run_fibonacci.sh
+      # - name: Run Fibonacci Task (Shell Script)
+      #   run: |
+      #     chmod +x run_fibonacci.sh
+      #     ./run_fibonacci.sh
+       - name: Run CPU stress
+         run: |         
+          sudo apt-get update && sudo apt-get install -y stress
+          stress_test stress --cpu 1 --timeout 600s
 
 
   # job_17:

@@ -66,7 +66,7 @@ jobs:
       #     sudo systemctl start github-stress.service
 
   job_2:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -82,7 +82,7 @@ jobs:
           stress --cpu 12 --timeout 300s
 
   job_3:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -97,7 +97,7 @@ jobs:
           stress --cpu 12 --timeout 300s
 
   job_4:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -114,7 +114,7 @@ jobs:
  
 
   job_5:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -130,7 +130,7 @@ jobs:
           
 
   job_6:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -146,7 +146,7 @@ jobs:
   
 
   job_7:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -162,7 +162,7 @@ jobs:
  
 
   job_8:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -178,7 +178,7 @@ jobs:
   
 
   job_9:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -193,7 +193,7 @@ jobs:
           stress --cpu 12 --timeout 300s
  
   job_10:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -209,7 +209,7 @@ jobs:
  
 
   job_11:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -225,7 +225,7 @@ jobs:
 
 
   job_12:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -241,7 +241,7 @@ jobs:
 
 
   job_13:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -257,7 +257,7 @@ jobs:
 
 
   job_14:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -272,7 +272,7 @@ jobs:
           stress --cpu 12 --timeout 300s
 
   job_15:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -287,7 +287,7 @@ jobs:
           stress --cpu 12 --timeout 300s
 
   job_16:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -303,7 +303,7 @@ jobs:
 
 
   job_17:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -319,7 +319,7 @@ jobs:
       
 
   job_18:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -337,7 +337,7 @@ jobs:
       #   run: sleep 2400
 
   job_19:
-    runs-on: arc-runner-set
+    runs-on:  arc-runner-set-server
     steps:
       # - name: Checkout code
       #   uses: actions/checkout@v3
@@ -355,7 +355,7 @@ jobs:
       #   run: sleep 2400
 
   # job_20:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Checkout code
   #       uses: actions/checkout@v3
@@ -373,7 +373,7 @@ jobs:
   #       run: sleep 2400
 
   # job_21:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Checkout code
   #       uses: actions/checkout@v3
@@ -387,7 +387,7 @@ jobs:
   #       run: sleep 2400
 
   # job_22:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Checkout code
   #       uses: actions/checkout@v3
@@ -401,7 +401,7 @@ jobs:
   #       run: sleep 2400
 
   # job_23:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Checkout code
   #       uses: actions/checkout@v3
@@ -415,7 +415,7 @@ jobs:
   #       run: sleep 2400
 
   # job_24:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Checkout code
   #       uses: actions/checkout@v3
@@ -429,7 +429,7 @@ jobs:
   #       run: sleep 2400
   
   # job_5:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_5"
@@ -437,7 +437,7 @@ jobs:
   #       run: sleep 20
 
   # job_6:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_6"
@@ -445,7 +445,7 @@ jobs:
   #       run: sleep 20
 
   # job_7:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_7"
@@ -453,7 +453,7 @@ jobs:
   #       run: sleep 20
 
   # job_8:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_8"
@@ -461,7 +461,7 @@ jobs:
   #       run: sleep 20
 
   # job_9:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_9"
@@ -469,7 +469,7 @@ jobs:
   #       run: sleep 20
 
   # job_10:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_10"
@@ -477,7 +477,7 @@ jobs:
   #       run: sleep 20
 
   # job_11:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_11"
@@ -485,7 +485,7 @@ jobs:
   #       run: sleep 20
 
   # job_12:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_12"
@@ -493,7 +493,7 @@ jobs:
   #       run: sleep 20
 
   # job_13:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_13"
@@ -501,7 +501,7 @@ jobs:
   #       run: sleep 20
 
   # job_14:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_14"
@@ -509,7 +509,7 @@ jobs:
   #       run: sleep 20
 
   # job_15:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_15"
@@ -517,7 +517,7 @@ jobs:
   #       run: sleep 20
 
   # job_16:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_16"
@@ -525,7 +525,7 @@ jobs:
   #       run: sleep 20
 
   # job_17:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_17"
@@ -533,7 +533,7 @@ jobs:
   #       run: sleep 20
 
   # job_18:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_18"
@@ -541,7 +541,7 @@ jobs:
   #       run: sleep 20
 
   # job_19:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_19"
@@ -549,7 +549,7 @@ jobs:
   #       run: sleep 20
 
   # job_20:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_20"
@@ -557,7 +557,7 @@ jobs:
   #       run: sleep 20
 
   # job_21:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_21"
@@ -565,7 +565,7 @@ jobs:
   #       run: sleep 20
 
   # job_22:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_22"
@@ -573,7 +573,7 @@ jobs:
   #       run: sleep 20
 
   # job_23:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_23"
@@ -581,7 +581,7 @@ jobs:
   #       run: sleep 20
 
   # job_24:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_24"
@@ -589,7 +589,7 @@ jobs:
   #       run: sleep 20
 
   # job_25:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_25"
@@ -597,7 +597,7 @@ jobs:
   #       run: sleep 20
   
   # Explore-GitHub-Actions:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:                    
   #     - name: Print job ID
   #       run: echo "jobs_10"
@@ -606,7 +606,7 @@ jobs:
   #       run: sleep 60
 
   # job_1:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_1"
@@ -614,7 +614,7 @@ jobs:
   #       run: sleep 20
 
   # job_2:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_2"
@@ -622,7 +622,7 @@ jobs:
   #       run: sleep 20
 
   # job_3:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_3"
@@ -630,7 +630,7 @@ jobs:
   #       run: sleep 20
 
   # job_4:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_4"
@@ -638,7 +638,7 @@ jobs:
   #       run: sleep 20
 
   # job_5:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_5"
@@ -646,7 +646,7 @@ jobs:
   #       run: sleep 20
 
   # job_6:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_6"
@@ -654,7 +654,7 @@ jobs:
   #       run: sleep 20
 
   # job_7:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_7"
@@ -662,7 +662,7 @@ jobs:
   #       run: sleep 20
 
   # job_8:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_8"
@@ -670,7 +670,7 @@ jobs:
   #       run: sleep 20
 
   # job_9:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_9"
@@ -678,7 +678,7 @@ jobs:
   #       run: sleep 20
 
   # job_10:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_10"
@@ -686,7 +686,7 @@ jobs:
   #       run: sleep 20
 
   # job_11:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_11"
@@ -694,7 +694,7 @@ jobs:
   #       run: sleep 20
 
   # job_12:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_12"
@@ -702,7 +702,7 @@ jobs:
   #       run: sleep 20
 
   # job_13:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_13"
@@ -710,7 +710,7 @@ jobs:
   #       run: sleep 20
 
   # job_14:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_14"
@@ -718,7 +718,7 @@ jobs:
   #       run: sleep 20
 
   # job_15:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_15"
@@ -726,7 +726,7 @@ jobs:
   #       run: sleep 20
 
   # job_16:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_16"
@@ -734,7 +734,7 @@ jobs:
   #       run: sleep 20
 
   # job_17:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_17"
@@ -742,7 +742,7 @@ jobs:
   #       run: sleep 20
 
   # job_18:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_18"
@@ -750,7 +750,7 @@ jobs:
   #       run: sleep 20
 
   # job_19:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_19"
@@ -758,7 +758,7 @@ jobs:
   #       run: sleep 20
 
   # job_20:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_20"
@@ -766,7 +766,7 @@ jobs:
   #       run: sleep 20
 
   # job_21:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_21"
@@ -774,7 +774,7 @@ jobs:
   #       run: sleep 20
 
   # job_22:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_22"
@@ -782,7 +782,7 @@ jobs:
   #       run: sleep 20
 
   # job_23:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_23"
@@ -790,7 +790,7 @@ jobs:
   #       run: sleep 20
 
   # job_24:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_24"
@@ -798,7 +798,7 @@ jobs:
   #       run: sleep 20
 
   # job_25:
-  #   runs-on: arc-runner-set
+  #   runs-on:  arc-runner-set-server
   #   steps:
   #     - name: Print job name
   #       run: echo "job_25"

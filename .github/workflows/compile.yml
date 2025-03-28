@@ -1,4 +1,4 @@
-name: Compile Geth
+name: Compile Job
 
 on:
   push:

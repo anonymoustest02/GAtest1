@@ -12,7 +12,7 @@ on:
 jobs:  
 
   job_1:
-    runs-on:  arc-runner-set  #ubuntu-latest -server
+    runs-on:  arc-runner-set-server  #ubuntu-latest -server
     steps:
  
         # - name: Check current username

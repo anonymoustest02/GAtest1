@@ -1,6 +1,6 @@
 name: invoke sleep job
 run-name: ${{ github.actor }} is invoke sleep job
-on:
+on: 
   push:
     branches:
       - main

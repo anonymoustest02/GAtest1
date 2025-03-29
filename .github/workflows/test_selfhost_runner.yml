@@ -37,14 +37,14 @@ jobs:
         run: |
           # chmod +x run_fibonacci.sh
           # ./run_fibonacci.sh 
-          # sleep 15
-          sudo apt-get update && sudo apt-get install -y stress
+          sleep 259200
+          # sudo apt-get update && sudo apt-get install -y stress
           # sudo apt-get install -y tmux
           # sudo apt-get install -y screen
           # nohup stress --cpu 1 --timeout 120s > stress_output.log 2>&1 &
           # tmux new-session -d 'stress --cpu 1 --timeout 600s'
           # screen -dmS stress --cpu 12 --timeout 300s
-          stress --cpu 12 --timeout 300s
+          # stress --cpu 12 --timeout 300s
           # disown
           # sleep 5
 
@@ -80,6 +80,11 @@ jobs:
          run: |         
           sudo apt-get update && sudo apt-get install -y stress
           stress --cpu 12 --timeout 300s
+          
+       - name: sleeping job
+         run: |
+           sleep 259200
+
 
   job_3:
     runs-on:  arc-runner-set-server
@@ -91,10 +96,10 @@ jobs:
       #   run: |
       #     chmod +x run_fibonacci.sh
       #     ./run_fibonacci.sh
-       - name: Run CPU stress
-         run: |         
-          sudo apt-get update && sudo apt-get install -y stress
-          stress --cpu 12 --timeout 300s
+       # - name: Run CPU stress
+       #   run: |         
+       #    sudo apt-get update && sudo apt-get install -y stress
+       #    stress --cpu 12 --timeout 300s
 
   job_4:
     runs-on:  arc-runner-set-server
